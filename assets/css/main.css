@@ -1,0 +1,153 @@
+:root {
+    --primary: #2563eb;
+    --primary-soft: #dbeafe;
+    --bg: #f9fafb;
+    --bg-card: #ffffff;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --border-soft: #e5e7eb;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-soft);
+}
+
+/* Hero */
+.hero {
+    padding: 1rem 0 0.5rem;
+}
+
+.hero-subtitle {
+    color: var(--text-muted);
+    max-width: 540px;
+}
+
+.badge-soft {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+/* Profile image in smooth figure */
+.profile-wrapper {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.profile-blob {
+    position: absolute;
+    inset: 0;
+    border-radius: 50% 40% 55% 45%;
+    background: radial-gradient(circle at 20% 0%,
+            rgba(59, 130, 246, 0.5),
+            rgba(129, 140, 248, 0.15));
+    filter: blur(0);
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.08),
+        0 0 0 1px rgba(209, 213, 219, 0.7);
+}
+
+.profile-image-border {
+    position: absolute;
+    inset: 26px;
+    border-radius: 999px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.15);
+}
+
+.profile-image-border img {
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+/* Section titles */
+.section-title {
+    font-weight: 600;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+}
+
+/* Cards */
+.card-custom {
+    border-radius: 1rem;
+    border: 1px solid var(--border-soft);
+    background-color: var(--bg-card);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.03);
+}
+
+.chip {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background-color: #f3f4f6;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin: 0.15rem;
+}
+
+/* Projects carousel */
+.project-img {
+    border-radius: 0.75rem;
+    object-fit: cover;
+    width: 100%;
+    height: 260px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(35%) sepia(82%) saturate(5574%) hue-rotate(214deg) brightness(93%) contrast(98%);
+}
+
+/* Contact list */
+.contact-label {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.contact-value {
+    font-size: 0.95rem;
+}
+
+.thumbnail {
+    max-height: 150px !important;
+}
+
+footer {
+    border-top: 1px solid var(--border-soft);
+    color: var(--text-muted);
+}
+
+.link-no-decoration {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+}

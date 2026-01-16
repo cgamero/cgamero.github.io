@@ -8,164 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-soft: #dbeafe;
-            --bg: #f9fafb;
-            --bg-card: #ffffff;
-            --text-main: #111827;
-            --text-muted: #6b7280;
-            --border-soft: #e5e7eb;
-        }
-
-        body {
-            background-color: var(--bg);
-            color: var(--text-main);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                sans-serif;
-        }
-
-        /* Navbar */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-soft);
-        }
-
-        /* Hero */
-        .hero {
-            padding: 4rem 0 3rem;
-        }
-
-        .hero-subtitle {
-            color: var(--text-muted);
-            max-width: 540px;
-        }
-
-        .badge-soft {
-            background-color: var(--primary-soft);
-            color: var(--primary);
-            border-radius: 999px;
-            font-weight: 500;
-        }
-
-        /* Profile image in smooth figure */
-        .profile-wrapper {
-            position: relative;
-            width: 260px;
-            height: 260px;
-            margin: 0 auto;
-        }
-
-        .profile-blob {
-            position: absolute;
-            inset: 0;
-            border-radius: 50% 40% 55% 45%;
-            background: radial-gradient(circle at 20% 0%,
-                    rgba(59, 130, 246, 0.5),
-                    rgba(129, 140, 248, 0.15));
-            filter: blur(0);
-            box-shadow:
-                0 18px 40px rgba(15, 23, 42, 0.08),
-                0 0 0 1px rgba(209, 213, 219, 0.7);
-        }
-
-        .profile-image-border {
-            position: absolute;
-            inset: 26px;
-            border-radius: 999px;
-            background-color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 12px 35px rgba(15, 23, 42, 0.15);
-        }
-
-        .profile-image-border img {
-            width: 100%;
-            height: 100%;
-            border-radius: 999px;
-            object-fit: cover;
-        }
-
-        /* Section titles */
-        .section-title {
-            font-weight: 600;
-        }
-
-        .section-subtitle {
-            color: var(--text-muted);
-        }
-
-        /* Cards */
-        .card-custom {
-            border-radius: 1rem;
-            border: 1px solid var(--border-soft);
-            background-color: var(--bg-card);
-            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.03);
-        }
-
-        .chip {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 999px;
-            background-color: #f3f4f6;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            margin: 0.15rem;
-        }
-
-        /* Projects carousel */
-        .project-img {
-            border-radius: 0.75rem;
-            object-fit: cover;
-            width: 100%;
-            height: 260px;
-        }
-
-        .carousel-indicators [data-bs-target] {
-            background-color: var(--primary);
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            filter: invert(35%) sepia(82%) saturate(5574%) hue-rotate(214deg) brightness(93%) contrast(98%);
-        }
-
-        /* Contact list */
-        .contact-label {
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        .contact-value {
-            font-size: 0.95rem;
-        }
-        
-        .thumbnail {
-            max-height: 150px !important;
-        }
-
-        footer {
-            border-top: 1px solid var(--border-soft);
-            color: var(--text-muted);
-        }
-
-        .link-no-decoration {
-            text-decoration: none !important;
-            color: inherit !important;
-        }
-
-        .text-lg {
-            font-size: 1.5rem;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -202,7 +46,7 @@
     <main id="top">
         <section class="hero">
             <div class="container">
-                <div class="row align-items-center g-5">
+                <div class="row align-items-center g-lg-5">
                     <div class="col-lg-6">
                         <span class="badge badge-soft px-3 py-2 mb-3">
                             Available for remote & freelance
@@ -241,17 +85,17 @@
                         <div class="profile-wrapper">
                             <div class="profile-blob"></div>
                             <div class="profile-image-border">
-                                <!-- Replace with your real image -->
-                                <img src="images/profile.png" alt="Profile of Carlos Gamero" />
+                                <img src="assets/images/profile.png" alt="Profile of Carlos Gamero" />
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-1">
-
-                        <div class="row"><h1><a href="https://wa.me/+5215532497860?text=hi%2C%20I%20saw%20your%20resume%20and%20I'm%20so%20interested%20in%20your%20profile" class="link-no-decoration" target="_blank" title="Send WhatsApp message"><i class="fab fa-whatsapp"></i></a></h1></div>
-                        <div class="row"><h1><a href="https://www.linkedin.com/in/ing-cgamero" class="link-no-decoration" target="_blank" title="Go to LinkedIn profile"><i class="fab fa-linkedin"></i></a></h1></div>
-                        <div class="row"><h1><a href="https://github.com/cgamero" class="link-no-decoration" target="_blank" title="Go to GitHub portfolio"><i class="fab fa-github-square"></i></a></h1></div>
+                    <div class="col-12 col-lg-1">
+                        <div class="row">
+                            <div class="col-4 col-md-12 mb-3 text-center"><h1><a href="https://wa.me/+5215532497860?text=hi%2C%20I%20saw%20your%20resume%20and%20I'm%20so%20interested%20in%20your%20profile" class="link-no-decoration" target="_blank" title="Send WhatsApp message"><i class="fab fa-whatsapp"></i></a></h1></div>
+                            <div class="col-4 col-md-12 mb-3 text-center"><h1><a href="https://www.linkedin.com/in/ing-cgamero" class="link-no-decoration" target="_blank" title="Go to LinkedIn profile"><i class="fab fa-linkedin"></i></a></h1></div>
+                            <div class="col-4 col-md-12 mb-3 text-center"><h1><a href="https://github.com/cgamero" class="link-no-decoration" target="_blank" title="Go to GitHub portfolio"><i class="fab fa-github-square"></i></a></h1></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,29 +117,29 @@
                     <div class="col-lg-5">
                         <div class="card-custom p-4 h-100">
                             <div class="row">
-                                <div class="col-lg-3">
-                                    <img src="images/logos/php-logo.svg" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/php-logo.svg" class="img-thumbnail thumbnail" alt="...">
                                 </div>
-                                <div class="col-lg-3">
-                                    <img src="images/logos/Laravel.svg.png" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/Laravel.svg.png" class="img-thumbnail thumbnail" alt="...">
                                 </div>
-                                <div class="col-lg-3">
-                                    <img src="images/logos/javascript.png" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/javascript.png" class="img-thumbnail thumbnail" alt="...">
                                 </div>
-                                <div class="col-lg-3">
-                                    <img src="images/logos/html.png" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/html.png" class="img-thumbnail thumbnail" alt="...">
                                 </div>
-                                <div class="col-lg-3">
-                                    <img src="images/logos/java.png" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/java.png" class="img-thumbnail thumbnail" alt="...">
                                 </div>
-                                <div class="col-lg-3">
-                                    <img src="images/logos/node.png" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/node.png" class="img-thumbnail thumbnail" alt="...">
                                 </div>
-                                <div class="col-lg-3">
-                                    <img src="images/logos/angular.png" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/angular.png" class="img-thumbnail thumbnail" alt="...">
                                 </div>
-                                <div class="col-lg-3">
-                                    <img src="images/logos/react.jpg" class="img-thumbnail thumbnail" alt="...">
+                                <div class="col-3 col-md-3 mb-3 text-center">
+                                    <img src="assets/images/logos/react.png" class="img-thumbnail thumbnail" alt="...">
                                 </div>
                             </div>
 
@@ -351,13 +195,13 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <div class="col-lg-1">
+                                <div class="col-4 col-lg-1">
                                     <div class="card-custom bd-callout bd-callout-info">
-                                        <img src="images/companies/globalhitss.jpg" alt="GlobalHitss Logo"
+                                        <img src="assets/images/companies/globalhitss.jpg" alt="GlobalHitss Logo"
                                             class="img-fluid p-2">
                                     </div>
                                 </div>
-                                <div class="col-lg-10 p-2">
+                                <div class="col-7 col-lg-10 p-2">
                                     <strong>Senior PHP Developer / Tech Lead.</strong>
                                     <div class="small text-muted">
                                         Remote · 2020 – 2025
@@ -402,13 +246,13 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <div class="col-lg-1">
+                                <div class="col-4 col-lg-1">
                                     <div class="card-custom bd-callout bd-callout-info">
-                                        <img src="images/companies/infotec.jpg" alt="Infotec Logo"
+                                        <img src="assets/images/companies/infotec.jpg" alt="Infotec Logo"
                                             class="img-fluid p-2">
                                     </div>
                                 </div>
-                                <div class="col-lg-10 p-2">
+                                <div class="col-7 col-lg-10 p-2">
                                     <strong>Full Stack Software Developer.</strong>
                                     <div class="small text-muted">
                                         On Site · 2019 – 2020
@@ -445,13 +289,13 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <div class="col-lg-1">
+                                <div class="col-4 col-lg-1">
                                     <div class="card-custom bd-callout bd-callout-info">
-                                        <img src="images/companies/ALEARNG.png" alt="GlobalHitss Logo"
+                                        <img src="assets/images/companies/ALEARNG.png" alt="GlobalHitss Logo"
                                             class="img-fluid p-2">
                                     </div>
                                 </div>
-                                <div class="col-lg-10 p-2">
+                                <div class="col-7 col-lg-10 p-2">
                                     <strong>PHP/Laravel Developer</strong>
                                     <div class="small text-muted">
                                         On Site · 2018 – 2019
@@ -487,13 +331,13 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <div class="col-lg-1">
+                                <div class="col-4 col-lg-1">
                                     <div class="card-custom bd-callout bd-callout-info">
-                                        <img src="images/companies/plumidea.svg" alt="Plumidea Logo"
+                                        <img src="assets/images/companies/plumidea.svg" alt="Plumidea Logo"
                                             class="img-fluid p-2">
                                     </div>
                                 </div>
-                                <div class="col-lg-10 p-2">
+                                <div class="col-7 col-lg-10 p-2">
                                     <strong>Development Manager.</strong>
                                     <div class="small text-muted">
                                         Remote · 2012 – 2018
@@ -558,7 +402,7 @@
                             <div class="row g-4 align-items-center p-4">
                                 <div class="col-md-6">
                                     <!-- Replace image -->
-                                    <img src="images/companies/america-movil.jpg" class="project-img"
+                                    <img src="assets/images/portfolio/amx.png" class="project-img"
                                         alt="Screenshot of AMX" />
                                 </div>
                                 <div class="col-md-6">
@@ -568,6 +412,12 @@
                                     </p>
                                     <p class="mb-3">
                                         Corporate web application for generating, analyzing, and controlling sales reports in AMX
+                                    </p>
+                                    <p>
+                                        <a href="https://www.rsvamx.com/vti_acceso.php" target="_blank" title="Go to the AMX web" class="btn btn-outline-primary">
+                                            <i class="fas fa-globe"></i>
+                                            Go Web
+                                        </a>
                                     </p>
                                     <div>
                                         <span class="chip">PHP</span>
@@ -591,7 +441,7 @@
                         <div class="carousel-item">
                             <div class="row g-4 align-items-center p-4">
                                 <div class="col-md-6">
-                                    <img src="images/companies/presidential_cms.png" class="project-img"
+                                    <img src="assets/images/portfolio/presidential_cms.png" class="project-img"
                                         alt="Screenshot of Presidential CMS" />
                                 </div>
                                 <div class="col-md-6">
@@ -601,6 +451,12 @@
                                     </p>
                                     <p class="mb-3">
                                         Government web application for managing public dependencies websites.
+                                    </p>
+                                    <p>
+                                        <a href="https://www.gob.mx/cms/admin/sign_in" target="_blank" title="Go to the Presidential CMS" class="btn btn-outline-primary">
+                                            <i class="fas fa-globe"></i>
+                                            Go Web
+                                        </a>
                                     </p>
                                     <div>
                                         <span class="chip">Ruby on Rails</span>
@@ -618,7 +474,7 @@
                         <div class="carousel-item">
                             <div class="row g-4 align-items-center p-4">
                                 <div class="col-md-6">
-                                    <img src="images/companies/coil_configurator.png" class="project-img"
+                                    <img src="assets/images/portfolio/coil_configurator.png" class="project-img"
                                         alt="Screenshot of coil Configurator" />
                                 </div>
                                 <div class="col-md-6">
@@ -631,6 +487,17 @@
                                     </p>
                                     <p class="mb-3">
                                         Corporate web and mobile application to customize coils and obtain component data, graphic flows, capacities and sales prices.
+                                    </p>
+                                    <p>
+                                        <a href="https://apps.apple.com/us/app/bohn-configurador-m%C3%A9xico/id6450432752?l=es-MX" target="_blank" title="Go to the Coil Configurator iOS App" class="btn btn-outline-success">
+                                            <i class="fab fa-apple"></i>
+                                            Go App Store
+                                        </a> 
+
+                                        <a href="https://configurador.bohnmexico.mx/" target="_blank" title="Go to the Coil Configurator Web" class="btn btn-outline-primary">
+                                            <i class="fas fa-globe"></i>
+                                            Go Web
+                                        </a>
                                     </p>
                                     <div>
                                         <span class="chip">Swift 3</span>
@@ -651,7 +518,7 @@
                         <div class="carousel-item">
                             <div class="row g-4 align-items-center p-4">
                                 <div class="col-md-6">
-                                    <img src="images/companies/cx_amx.png" class="project-img"
+                                    <img src="assets/images/portfolio/cx_amx.png" class="project-img"
                                         alt="Screenshot of CX AMX" />
                                 </div>
                                 <div class="col-md-6">
@@ -661,6 +528,12 @@
                                     </p>
                                     <p class="mb-3">
                                         Corporate web application to manage customer experience regarding technology services
+                                    </p>
+                                    <p>
+                                        <a href="https://www.rsvamx.com:8081/CustomerExperience/faces/xhtml/login/login.xhtml" target="_blank" title="Go to the CX Web" class="btn btn-outline-primary">
+                                            <i class="fas fa-globe"></i>
+                                            Go Web
+                                        </a>
                                     </p>
                                     <div>
                                         <span class="chip">Java</span>
